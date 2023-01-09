@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class AccountService extends BaseService<Account> {
 
-    private final AccountRepository accountRepository;
-    private final BalanceRepository balanceRepository;
-    private final PersonRepository personRepository;
+  private final AccountRepository accountRepository;
+  private final BalanceRepository balanceRepository;
+  private final PersonRepository personRepository;
 }

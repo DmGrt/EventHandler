@@ -2,12 +2,12 @@ package com.hrytsyshyn.eventhandler.service.time;
 
 import com.influxdb.client.InfluxDBClient;
 import com.influxdb.client.InfluxDBClientFactory;
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
+import org.springframework.context.annotation.Configuration;
 
-@Component
-@AllArgsConstructor
+@Configuration
+@RequiredArgsConstructor
 public class InfluxDBConnection {
   @Value("${spring.influx.url}")
   private final String url;

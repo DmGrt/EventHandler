@@ -8,5 +8,5 @@ import org.springframework.stereotype.Service;
 @Service
 @RequiredArgsConstructor
 public class PersonService extends BaseService<Person> {
-    private final PersonRepository personRepository;
+  private final PersonRepository personRepository;
 }

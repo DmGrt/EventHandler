@@ -9,6 +9,6 @@ import org.springframework.stereotype.Service;
 @Service
 @RequiredArgsConstructor
 public class EventService extends BaseService<Event> {
-    private final EventParameterRepository eventParameterRepository;
-    private final EventTypeRepository eventTypeRepository;
+  private final EventParameterRepository eventParameterRepository;
+  private final EventTypeRepository eventTypeRepository;
 }

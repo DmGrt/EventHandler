@@ -8,5 +8,5 @@ import org.springframework.stereotype.Service;
 @Service
 @RequiredArgsConstructor
 public class BalanceService extends BaseService<Balance> {
-    private final BalanceRepository balanceRepository;
+  private final BalanceRepository balanceRepository;
 }

@@ -11,10 +11,12 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.Data;
 
 @Entity
 @Table(name = "currencyCountry")
 @Builder
+@Data
 @AllArgsConstructor
 public class CurrencyCountry {
   @Id

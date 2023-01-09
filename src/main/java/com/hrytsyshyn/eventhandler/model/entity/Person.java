@@ -12,10 +12,12 @@ import javax.persistence.Table;
 import javax.validation.constraints.Pattern;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.Data;
 
 @Entity
 @Table(name = "person")
 @Builder
+@Data
 @AllArgsConstructor
 public class Person {
   @Id

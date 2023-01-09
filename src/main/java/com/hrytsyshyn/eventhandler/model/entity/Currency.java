@@ -8,10 +8,12 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.Data;
 
 @Entity
 @Table(name = "currency")
 @Builder
+@Data
 @AllArgsConstructor
 public class Currency {
   @Id

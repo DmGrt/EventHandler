@@ -13,10 +13,12 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.Data;
 
 @Entity
 @Table(name = "balance")
 @Builder
+@Data
 @AllArgsConstructor
 public class Balance {
   @Id

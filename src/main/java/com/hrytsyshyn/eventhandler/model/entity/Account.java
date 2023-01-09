@@ -12,10 +12,12 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.Data;
 
 @Entity
 @Table(name = "account")
 @Builder
+@Data
 @AllArgsConstructor
 public class Account {
   @Id

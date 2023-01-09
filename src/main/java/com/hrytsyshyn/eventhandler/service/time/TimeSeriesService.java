@@ -12,11 +12,15 @@ import com.influxdb.query.InfluxQLQueryResult;
 import java.time.Instant;
 import java.time.LocalDateTime;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor
 public class TimeSeriesService {
+  @Value("${management.influx.metrics.export.partitioning}")
+  private final String partitioningRange;
+
   private final EventService eventService;
   private final InfluxDBConnection influxDBConnection;
 
